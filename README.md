@@ -1,4 +1,17 @@
 # Vrekrer scpi parser
+
+> **About this fork:** this fork contains fixes that have been submitted
+> upstream but are not merged yet. They are on the
+> [`fix/hash-and-registration-diagnostics`](https://github.com/awesomenesser/Vrekrer_scpi_parser/compare/master...fix/hash-and-registration-diagnostics)
+> branch:
+> - Commands and TreeBases whose hash is 0 or 1 now work.
+> - Hash collisions and tokens that accept the same keyword are reported by
+>   `PrintDebugInfo()`, `HasSetupError()` and `GetSetupErrors()`.
+> - 32 bit hashes use a larger default magic number (fewer collisions).
+> - Host tests in `extras/test`.
+>
+> For the original library see
+> [Vrekrer/Vrekrer_scpi_parser](https://github.com/Vrekrer/Vrekrer_scpi_parser).
 A simple [SCPI](https://en.wikipedia.org/wiki/Standard_Commands_for_Programmable_Instruments) parser for Arduino projects.
 
 ## Features
